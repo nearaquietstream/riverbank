@@ -1,0 +1,61 @@
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	padding: 1em .5em;
+	min-height: 100px;
+	min-width: 320px;
+	position: relative;
+}
+
+.hidenav{
+	display:none;
+}
+
+#dl-logo{
+	float:right;
+	max-width:100%;
+	height:auto;
+}
+
+
+@media screen and (min-width: 60rem) {
+.hidenav{
+	display:block;
+}
+
+.dl-menuwrapper{
+	display:none;
+}
+
+	.main {
+		padding: 0;
+	}
+
+	.column {
+		width: 100%;
+		min-width: auto;
+		min-height: auto;
+		padding: 0em 2em; 
+	}
+
+	.column p {
+		text-align: left;
+		font-size: 1.5em;
+	}
+
+	.column:nth-child(2) {
+		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+		background-position: 90px 3em;
+	}
+}
